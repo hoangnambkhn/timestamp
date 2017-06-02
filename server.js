@@ -6,11 +6,11 @@ app.get('/',function(req,res){
   var fileName = path.join(__dirname, 'index.html');
   res.sendFile(fileName, function (err) {
     if (err) {
-      console.log(err);
+      //console.log(err);
       res.status(err.status).end();
     }
     else {
-      console.log('Sent:', fileName);
+      //console.log('Sent:', fileName);
     }
   });
 })
@@ -25,7 +25,7 @@ app.get('/:datestring', function(req,res){
         var result = month + " " +day+" " + year;
         return result;
     }
-    console.log(req.params.datestring);
+    // console.log(req.params.datestring);
     if(!isNaN(req.params.datestring)){
         var result = unixToNatural(req.params.datestring);
         var dataRes1 = {
