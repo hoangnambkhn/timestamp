@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 var path = require('path');
+var port  = process.env.PORT || 8080;
 
 app.get('/',function(req,res){
   var fileName = path.join(__dirname, 'index.html');
@@ -69,7 +70,7 @@ app.get('/:datestring', function(req,res){
       
     // }
 });
-app.listen(8080, function(err){
+app.listen(port, function(err){
     if(err) return console.error(err);
     console.log("server listen on 8080" );
 })
