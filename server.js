@@ -3,16 +3,9 @@ var app = express();
 var path = require('path');
 
 app.get('/',function(req,res){
-  var fileName = path.join(__dirname, 'index.html');
-  res.sendFile(fileName, function (err) {
-    if (err) {
-      //console.log(err);
-      res.status(err.status).end();
-    }
-    else {
-      //console.log('Sent:', fileName);
-    }
-  });
+  res.send("Pass the unix timestamp or a natural language date (example: January 1, 2016) to get the detail of date </br> </br> "+
+  "Such as : <ul> <li> <span style='color:red'>https://timestamp-nmaddp1995.herokuapp.com/December%2015,%202015</span>"+
+"<li><span style='color:red'> https://timestamp-nmaddp1995.herokuapp.com/1450137600 </span></ul>") ;
 })
 
 app.get('/:datestring', function(req,res){
