@@ -1,24 +1,19 @@
 {
   "name": "timestamp",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
-  "author": "nammhoang",
+  "author": "namhoang18595@gmail.com",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hoangnambkhn/timestamp.git"
-  },
-  "bugs": {
-    "url": "https://github.com/hoangnambkhn/timestamp/issues"
-  },
-  "homepage": "https://github.com/hoangnambkhn/timestamp#readme",
-  "description": ""
+   
+    
+    
+  }
 }
